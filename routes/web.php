@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-  return view('welcome');
-});
+// Route::get('/', function () {
+//   return view('welcome');
+// });
+
+
+// API以外の全てのリクエストを指定のURLにリダイレクト
+Route::any('{any}', function () {
+  return redirect('https://silmo.jp/');
+})->where('any', '.*');
