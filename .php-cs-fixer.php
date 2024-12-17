@@ -115,6 +115,9 @@ return $config
         __DIR__ . '/resources',
         __DIR__ . '/routes',
         __DIR__ . '/tests',
+    __DIR__ . '/public',
+        __DIR__ . '/bootstrap',
+
       ])
       ->name('*.php')
       ->notName('*.blade.php')
